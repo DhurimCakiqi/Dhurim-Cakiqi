@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.front {
+  margin-top: 10%;
+}
+
+.page {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+p {
+  text-align: justify
+}
+
+/* Responsive columns (responsive behaviour comes from media at the end) */
+.column33 {
+  float: left;
+  width: 33%;
+}
+.column34 {
+  float: left;
+  width: 34%;
+}
+.column50 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Navigation bar styling */
+.nav {
+  text-align: left;
+}
+
+.navcol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Setting up navigation links */
+.naventry-link {
+  text-decoration: none;
+  border-bottom: none;
+}
+.naventry-link:link {
+  color: black;
+}
+.naventry-link:visited {
+  color: black;
+}
+.naventry-link:hover {
+  background: none;
+}
+
+/* Calling card styling */
+.callcard {
+  display: table;
+  height: 200px; /* Set to same as height of profile picture */
+}
+
+.callcard-list {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.callcard-title {
+  padding: 0;
+  margin: 0;
+}
+
+.markless-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spaced {
+  margin-bottom: 5px;
+}
+
+/* Profile picture on the landing page */
+.profile {
+  border-radius: 0%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+/* Setting up general link behaviour */
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+a:link {
+  color: #437a16;
+}
+a:visited {
+  color: #265301;
+}
+a:hover {
+  background: #cdfeaa;
+}
+
+#webring-left {
+  width: 33%;
+  float: left;
+  margin: 0px;
+  text-align: left;
+}
+
+#webring-middle {
+  width: 34%;
+  float: left;
+  margin: 0px;
+  text-align: center;
+}
+
+#webring-right {
+  width: 33%;
+  float: left;
+  margin: 0px;
+  text-align: right;
+}
+
+/* Responsive front page stuff (making columns stack, centering text when stacked)*/
+
+/* Breakpoint for front page stacking */
+@media (max-width: 750px) {
+  .frontcol {
+    width: 100%;
+  }
+
+  .callcard {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
+    text-align: center;
+    margin-bottom: 42px; /* Here for nice mobile spacing */
+  }
+}
+
+/* Breakpoint for webring header */
+@media (max-width: 400px) {
+  #webring-left {
+    width: 50%;
+  }
+  #webring-middle {
+    display: none;
+  }
+  #webring-right {
+    width: 50%;
+  }
+}
