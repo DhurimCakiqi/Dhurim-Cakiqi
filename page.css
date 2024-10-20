@@ -15,6 +15,10 @@ p {
   text-align: left
 }
 
+a {
+    color: hotpink;
+  }
+
 /* Responsive columns (responsive behaviour comes from media at the end) */
 .column33 {
   float: left;
